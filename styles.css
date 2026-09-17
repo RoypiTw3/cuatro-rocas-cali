@@ -132,19 +132,15 @@ button, input, select {
   align-items: center;
   gap: 0.75rem;
 }
-.logo-badge {
-  width: 2.85rem;
-  height: 2.85rem;
-  background: linear-gradient(135deg, #F59E0B, #DC2626);
-  border-radius: var(--radius-md);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 900;
-  font-size: 1.25rem;
-  color: #FFF;
-  box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
-  letter-spacing: -0.05em;
+.header-logo-img {
+  width: 3.25rem;
+  height: 3.25rem;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 10px rgba(225, 29, 72, 0.45));
+  transition: transform 0.25s ease;
+}
+.brand-logo:hover .header-logo-img {
+  transform: scale(1.06);
 }
 .brand-name {
   display: flex;
